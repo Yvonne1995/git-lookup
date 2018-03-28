@@ -17,11 +17,12 @@ export class ProfileService {
     return this._http.get(this.apiUrl + this.username + "?access_token=" + this.accesstoken)
       .map(result => result);
   }
+  // console.log(userProfile);
   userRepos() {
     return this._http.get(this.apiUrl + this.username + "/repos?access_token=" + this.accesstoken)
       .map(result => result);
   }
-  updateProfile(username: string) {
+  updateProfile(username:string) {
     this.username = username;
   }
 }

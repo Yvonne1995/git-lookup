@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms'
 import {NgProgressModule} from '@ngx-progressbar/core';
-// import {NgProgressHttpClientModule} from '@ngx-progressbar/http-client';
 import {ProfileService} from './profile.service';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -17,32 +16,9 @@ import { ProfileComponent } from './profile/profile.component';
     FormsModule,
     HttpClientModule,
     NgProgressModule.forRoot(),
-    // NgProgressHttpClientModule
 
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-// import { BrowserModule } from '@angular/platform-browser';
-// import { NgModule } from '@angular/core';
-//
-//
-// import { AppComponent } from './app.component';
-// import { ProfileComponent } from './profile/profile.component';
-// import { ProfileService } from './profile.service';
-//
-//
-// @NgModule({
-//   declarations: [
-//     AppComponent,
-//     ProfileComponent
-//   ],
-//   imports: [
-//     BrowserModule
-//   ],
-//   providers: [ ProfileService ],
-//   bootstrap: [AppComponent]
-// })
-// export class AppModule { }
