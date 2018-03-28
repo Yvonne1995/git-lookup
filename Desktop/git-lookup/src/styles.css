@@ -32,12 +32,12 @@ label:nth-child(2){
   animation: type2 8s steps(60, end);
 }
 
-body{
+.center{
   background-image: url("assets/logo.png");
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 200px;
-  padding-left: 250px;
+  padding-left: 200px;
   padding-bottom: 250px;
   background-size: 500px;
 }
